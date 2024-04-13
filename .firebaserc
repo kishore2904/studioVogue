@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "studiovogue-c0e63": {
+      "hosting": {
+        "studiovogue": [
+          "studiovogue-c0e63"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "studiovogue-c0e63"
+  }
+}

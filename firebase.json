@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "studiovogue",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}
