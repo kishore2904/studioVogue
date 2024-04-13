@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: >-
-          npm install && cd /home/runner/work/studioVogueng/studioVogueng &&npm
-          run build --prod
+      - run: npm install 
+      - run: cd /home/runner/work/studioVogue/studioVogue
+      - run: npm run build --prod
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
