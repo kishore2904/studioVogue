@@ -1,9 +1,10 @@
 {
-  "hosting": [
-    {
-      "target": "studiovogue",
-      "source": ".",
-      "frameworksBackend": {}
-    }
-  ]
+  "hosting": {
+    "public": "dist/studiovogue/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
 }

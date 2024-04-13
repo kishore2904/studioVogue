@@ -1,0 +1,46 @@
+<div class="mainContainer ">
+    <h2>Add New Article</h2>
+    <form [formGroup]="addProductForm">
+        <div class="card flex justify-content-center mt-4">
+            <span class="p-float-label">
+                <input pInputText id="productName" formControlName="productNameControl" />
+                <label for="productName">Product Name</label>
+            </span>
+        </div>
+        <div class="card flex justify-content-center mt-4">
+            <span class="p-float-label">
+                <input pInputText id="productPrice" formControlName="productPriceControl" />
+                <label for="productPrice">Product Price</label>
+            </span>
+        </div>
+        <div class="card flex justify-content-center mt-4">
+            
+            <span class="p-float-label">
+                <textarea id="float-input" rows="5" cols="23" pInputTextarea formControlName="productDescriptionControl"></textarea>
+                <label for="float-input">Description</label>
+            </span>
+        </div>
+        <div class="card flex justify-content-center mt-4">
+            <span class="p-float-label">
+                <input pInputText id="productDiscount" formControlName="productDiscountControl" />
+                <label for="productDiscount">Discount Price</label>
+            </span>
+        </div>
+        
+            <p class="text-center">Product in stock</p>
+            <div class="card flex justify-content-center mt-4">
+            <label>
+                <input type="radio" formControlName="inStockControl" value="true"> Yes
+              </label>
+              <label>
+                <input type="radio" formControlName="inStockControl" value="false"> No
+              </label>
+        </div>
+        
+        
+
+<div class="card flex justify-content-center mt-4">
+    <p-button label="Submit"[disabled]="!addProductForm.valid" (click)="addProduct()"></p-button>
+</div>
+    </form>
+</div>
